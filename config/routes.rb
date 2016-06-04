@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root to: "homepage#home"
 
   get 'homepage', to: 'homepage#home', as: "home"
+
+  get 'schedule', to: 'schedule#new', as: "new_schedule"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
