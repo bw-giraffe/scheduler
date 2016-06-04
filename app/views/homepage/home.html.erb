@@ -1,20 +1,20 @@
 <h3> Schedule </h3>
 <h4> for reference: {id: 1, start: 60, end: 120} </h4>
 <%= form_tag "/schedule" do %>
-  <%= label_tag "event1" %>
-  <%= text_field_tag "event1" %>
+  <%= label_tag "event1"%>
+  <%= text_field_tag "event1", "{id: 1, start: 60, end: 120}" %>
     <br>
     <br>
    <%= label_tag "event2" %>
-  <%= text_field_tag "event2" %>
+  <%= text_field_tag "event2", "{id: 2, start: 240, end: 360}" %>
 	<br>
     <br>
    <%= label_tag "event3" %>
-  <%= text_field_tag "event3" %>
+  <%= text_field_tag "event3", "{id: 3, start: 10, end: 40}" %>
 	<br>
     <br>
    <%= label_tag "event4" %>
-  <%= text_field_tag "event4" %>
+  <%= text_field_tag "event4", "{id: 4, start: 110, end: 480}" %>
   	<br>
   	<br>
   <%= submit_tag "Submit" %>
