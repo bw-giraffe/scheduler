@@ -1,11 +1,22 @@
 <h3> Schedule </h3>
+<h4> for reference: {id: 1, start: 60, end: 120} </h4>
 <%= form_tag "/schedule" do %>
-  <%= label_tag "start" %>
-  <%= text_field_tag "start" %>
-    <br/>
-   <%= label_tag "end" %>
-  <%= text_field_tag "end" %>
-  <br/>
+  <%= label_tag "event1" %>
+  <%= text_field_tag "event1" %>
+    <br>
+    <br>
+   <%= label_tag "event2" %>
+  <%= text_field_tag "event2" %>
+	<br>
+    <br>
+   <%= label_tag "event3" %>
+  <%= text_field_tag "event3" %>
+	<br>
+    <br>
+   <%= label_tag "event4" %>
+  <%= text_field_tag "event4" %>
+  	<br>
+  	<br>
   <%= submit_tag "Submit" %>
 <% end %>
 <br/>
