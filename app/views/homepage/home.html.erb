@@ -1,0 +1,12 @@
+<h3> Schedule </h3>
+<%= form_tag "/schedule" do %>
+  <%= label_tag "start" %>
+  <%= text_field_tag "start" %>
+    <br/>
+   <%= label_tag "end" %>
+  <%= text_field_tag "end" %>
+  <br/>
+  <%= submit_tag "Submit" %>
+<% end %>
+<br/>
+<canvas id = "schedulecanvas" style="background: blue; opacity: 0.2;" width=620 height=700></canvas>
