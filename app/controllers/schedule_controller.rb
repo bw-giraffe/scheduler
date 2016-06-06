@@ -24,9 +24,8 @@ class ScheduleController < ApplicationController
         if(sorted_events[i][:start] < grouped[i-1][:end])
           blank = []
           blank.push(grouped[i-1])
-          p "BLANK1 #{blank}"
           blank.push(sorted_events[i])
-          p "BLANK2 #{blank}"
+          # p "BLANK2 #{blank}"
           grouped[i-1] = blank
         else
           grouped.push(sorted_events[i])
